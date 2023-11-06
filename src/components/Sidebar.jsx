@@ -31,11 +31,11 @@ const Sidebar = () => {
                     return <CartItem item={item} key={item.id} />
                 })}
             </div>
-            <div>
-                <div className="bg-pink-200 flex w-full justify-between items-center">
+            <div className="flex flex-col gap-y-3 py-4 mt-4">
+                <div className="flex w-full justify-between items-center">
                     {/* total */}
-                    <div>
-                        <span>Total:</span>$ 1000
+                    <div className="uppercase font-semibold">
+                        <span className="mr-2">Total:</span>$ 1000
                     </div>
                     {/* clear cart icon */}
                     <div onClick={clearCart} className="cursor-pointer py-4 bg-red-500 text-white w-12 h-12 flex justify-center items-center text-xl">
