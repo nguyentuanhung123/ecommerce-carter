@@ -7,12 +7,12 @@ const SidebarProvider = ({ children }) => {
     //sidebar state
     const [isOpen, setIsOpen] = useState(false);
 
-    const hanldeClose = () => {
+    const handleClose = () => {
         setIsOpen(false);
     }
 
     return (
-        <SidebarContext.Provider value={{ isOpen, setIsOpen, hanldeClose }}>
+        <SidebarContext.Provider value={{ isOpen, setIsOpen, handleClose }}>
             {children}
         </SidebarContext.Provider>
     )
