@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 //import product context
 import { ProductContext } from "../contexts/ProductContext";
-import Loading from "../components/Loading";
-import Product from "../components/Product";
+//import components
+import Loading from "../components/Loading.jsx";
+import Product from "../components/Product.jsx";
+import Hero from "../components/Hero.jsx";
 
 const Home = () => {
     //loading
@@ -28,6 +30,7 @@ const Home = () => {
 
     return (
         <div>
+            <Hero />
             <section className="py-16">
                 <div className="container mx-auto">
                     {
