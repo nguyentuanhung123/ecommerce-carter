@@ -26,12 +26,13 @@ const Sidebar = () => {
                     <IoMdArrowForward className="text-2xl" />
                 </div>
             </div>
-            <div className="flex flex-col gap-y-2 h-[510px] lg:h-[560px] overflow-y-auto overflow-x-hidden border-b">
+
+            <div className="flex flex-col gap-y-2 h-[420px] lg:h-[440px] overflow-y-auto overflow-x-hidden border-b">
                 {cart.map((item) => {
                     return <CartItem item={item} key={item.id} />
                 })}
             </div>
-            <div className="flex flex-col gap-y-3 py-4 mt-4 h-[80px]">
+            <div className="flex flex-col gap-y-3 py-4 mt-4">
                 <div className="flex w-full justify-between items-center">
                     {/* total */}
                     <div className="uppercase font-semibold">
@@ -42,7 +43,10 @@ const Sidebar = () => {
                         <FiTrash2 />
                     </div>
                 </div>
+                <Link to='/' className="bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium">View cart</Link>
+                <Link to='/' className="bg-primary flex p-4 justify-center items-center text-white w-full font-medium">Checkout</Link>
             </div>
+
         </div>
     )
 }
