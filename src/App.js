@@ -11,6 +11,7 @@ import ProductDetails from "./pages/ProductDetails.jsx"
 import Sidebar from "./components/Sidebar.jsx";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import Newsletter from "./components/Newsletter.jsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/product/:id' element={<ProductDetails />} />
         </Routes>
         <Sidebar />
+        <Newsletter />
         <Footer />
       </Router>
     </div>
