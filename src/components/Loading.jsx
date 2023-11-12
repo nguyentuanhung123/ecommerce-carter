@@ -2,7 +2,7 @@ import React from "react";
 
 const Loading = () => {
     return (
-        <div className="w-full h-full flex justify-center">
+        <div className="flex justify-center">
             <svg
                 class="feather feather-loader animate-spin"
                 fill="none" height="120" stroke="currentColor"
