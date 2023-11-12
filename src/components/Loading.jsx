@@ -5,9 +5,9 @@ const Loading = () => {
         <div className="flex justify-center">
             <svg
                 class="feather feather-loader animate-spin"
-                fill="none" height="120" stroke="currentColor"
+                fill="none" height="110" stroke="currentColor"
                 stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="2" viewBox="0 0 24 24" width="120"
+                stroke-width="2" viewBox="0 0 24 24" width="110"
                 xmlns="http://www.w3.org/2000/svg">
                 <line x1="12" x2="12" y1="2" y2="6" />
                 <line x1="12" x2="12" y1="18" y2="22" />
