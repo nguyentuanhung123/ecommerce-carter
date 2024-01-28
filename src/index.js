@@ -10,15 +10,16 @@ import SidebarProvider from './contexts/SidebarContext.jsx';
 //cart provider
 import CartProvider from './contexts/CartContext.jsx';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <CartProvider>
-    <SidebarProvider>
-      <ProductProvider>
-        <App />
-      </ProductProvider>
-    </SidebarProvider>
-  </CartProvider>
+    <CartProvider>
+      <SidebarProvider>
+        <ProductProvider>
+          <App />
+        </ProductProvider>
+      </SidebarProvider>
+    </CartProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

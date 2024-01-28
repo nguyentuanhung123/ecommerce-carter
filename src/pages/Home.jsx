@@ -5,6 +5,7 @@ import { ProductContext } from "../contexts/ProductContext";
 import Loading from "../components/Loading.jsx";
 import Product from "../components/Product.jsx";
 import Hero from "../components/Hero.jsx";
+import ThemeBtn from "../components/ThemeBtn.jsx";
 
 const Home = () => {
     //loading
@@ -31,7 +32,10 @@ const Home = () => {
     return (
         <div>
             <Hero />
-            <section className="py-16">
+            <div className="w-full flex justify-end my-4">
+                <ThemeBtn />
+            </div>
+            <section className="pb-16 pt-4">
                 <div className="container mx-auto">
                     {
                         isLoading ? <Loading /> : <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0">
