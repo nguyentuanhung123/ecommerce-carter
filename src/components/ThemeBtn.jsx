@@ -53,7 +53,7 @@ const ThemeBtn = () => {
         onClick={() => setDarkMode(!darkMode)}>
             <FaMoon className="text-white" size={18}/>
             <div className={`${darkMode ? "left-[2px]" : "right-[2px]"} absolute bg-white dark:bg-medium w-6 h-6 rounded-full
-            shadow-md transform transition-transform duration-300`}></div>
+            shadow-md transform transition-transform duration-320`}></div>
             <BsSunFill className="ml-auto text-yellow-400" size={18}/>
         </div>
     )
