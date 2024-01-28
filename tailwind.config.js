@@ -2,6 +2,7 @@
 module.exports = {
   mode: "jit",
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+  darkMode: 'class',
   theme: {
     fontFamily: {
       primary: 'Poppins',
@@ -22,6 +23,8 @@ module.exports = {
       colors: {
         primary: '#222222',
         secondary: '#F5E6E0',
+        dark : '#232A3C',
+        medium: '#293245'
       },
       backgroundImage: {
         hero: "url('./img/bg_hero.svg')",
